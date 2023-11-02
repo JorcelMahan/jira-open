@@ -70,7 +70,7 @@ export const EntryPage: FC<Props> = ({ entry }) => {
         container
         justifyContent='center'
         sx={{
-          marginTop: 2,
+          marginTop: 8,
         }}
       >
         <Grid item xs={12} sm={8} md={6}>
