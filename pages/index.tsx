@@ -4,7 +4,7 @@ import type { NextPage } from 'next';
 import { Layout } from '@/components/layouts';
 import { EntryList, NewEntry } from '@/components/ui';
 
-export default function Home(): NextPage {
+const Home: NextPage = (): JSX.Element => {
   return (
     <Layout title='Home - Jira'>
       <Grid container spacing={2} sx={{ my: 4 }}>
@@ -30,4 +30,6 @@ export default function Home(): NextPage {
       </Grid>
     </Layout>
   );
-}
+};
+
+export default Home;

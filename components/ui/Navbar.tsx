@@ -16,17 +16,11 @@ export const Navbar = () => {
           <MenuOutlined />
         </IconButton>
         <NextLink href='/' passHref>
-          {/* <Link underline='none' color='white'> */}
           <Typography variant='h6' color='white'>
             Jira
           </Typography>
-          {/* </Link> */}
         </NextLink>
       </Toolbar>
     </AppBar>
   );
 };
-
-// <Link underline='none' color='white'>
-//   <Typography variant='h6'>Jira</Typography>
-// </Link>;
