@@ -29,6 +29,9 @@ export const EntryList: FC<Props> = ({ status }) => {
     const id = event.dataTransfer.getData('text');
 
     const entry = entries.find(entry => entry._id === id);
+
+    if (!entry) return;
+
     entry.status = status;
     updateEntry(entry);
     endDragging();
